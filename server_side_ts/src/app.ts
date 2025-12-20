@@ -10,8 +10,9 @@ app.use(cors({
 }))
 app.use(express.json())
 
+import healthCheckRouter from "./v1/healthCheck/route";
 
+app.use("/api/v1/health-check", healthCheckRouter);
 
-
-export default app
+export default app;
 

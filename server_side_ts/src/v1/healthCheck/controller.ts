@@ -1,9 +1,9 @@
-import asyncHandler from "./../utils/asyncHandler";
+import asyncHandler from "../../utils/asyncHandler";
 import type { Request, Response } from "express";
 
 
 const healthCheckController = asyncHandler(async (req: Request, res: Response) => {
-    res.json({ 
+    res.json({
         message: "OK",
         status: "success",
         statusCode: 200,
@@ -17,4 +17,4 @@ const healthCheckController = asyncHandler(async (req: Request, res: Response) =
     });
 });
 
-export {healthCheckController}
+export { healthCheckController }
